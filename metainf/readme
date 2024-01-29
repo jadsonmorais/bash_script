@@ -1,0 +1,7 @@
+# ##################################################
+#	MODO DE USO
+# ##################################################
+# Passar um dominio e uma extensão.
+# Extensoes disponiveis: pdf, docx, doc, xls, xlsx, ppt, pptx
+#
+# ./metainf.sh businesscorp.com.br pdf
