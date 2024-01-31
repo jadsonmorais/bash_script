@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /_restrito
+Disallow: /_docs
+Disallow: /admin
+Disallow: /bkp
+Allow: /configuracoes/comunicacao/projeto.txt
