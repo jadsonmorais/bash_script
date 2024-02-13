@@ -1,4 +1,6 @@
 #!/usr/bin/python
+
+# A ideia do script e reproduzir o comportamento do whois
 import socket,sys,re
 
 _ISO_88591 = "ISO-8859-1"
