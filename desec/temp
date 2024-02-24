@@ -1,28 +1,131 @@
-[v1.10-48]
-connect to somewhere:	nc [-options] hostname port[s] [ports] ... 
-listen for inbound:	nc -l -p port [-options] [hostname] [port]
-options:
-	-c shell commands	as `-e'; use /bin/sh to exec [dangerous!!]
-	-e filename		program to exec after connect [dangerous!!]
-	-b			allow broadcasts
-	-g gateway		source-routing hop point[s], up to 8
-	-G num			source-routing pointer: 4, 8, 12, ...
-	-h			this cruft
-	-i secs			delay interval for lines sent, ports scanned
-        -k                      set keepalive option on socket
-	-l			listen mode, for inbound connects
-	-n			numeric-only IP addresses, no DNS
-	-o file			hex dump of traffic
-	-p port			local port number
-	-r			randomize local and remote ports
-	-q secs			quit after EOF on stdin and delay of secs
-	-s addr			local source address
-	-T tos			set Type Of Service
-	-t			answer TELNET negotiation
-	-u			UDP mode
-	-v			verbose [use twice to be more verbose]
-	-w secs			timeout for connects and final net reads
-	-C			Send CRLF as line-ending
-	-z			zero-I/O mode [used for scanning]
-port numbers can be individual or ranges: lo-hi [inclusive];
-hyphens in port names must be backslash escaped (e.g. 'ftp\-data').
+ tools/caca2tlf.c |    2 +-
+ fonts/biggray12.tlf |  Bin 0 -> 116661 bytes
+ fonts/biggray9.tlf  |  Bin 0 -> 84507 bytes
+    Generate colour fonts with caca2tlf.
+ tools/caca2tlf.c |   67 +++++++++++++++++++++++++++++++++++++++++++++--------
+ fonts/pagga.tlf |   40 ++++++++++++++++++++--------------------
+    Add a new CP437 font: pagga.tlf
+ fonts/pagga.tlf   |  534 +++++++++++++++++++++++++++++++++++++++++++++++++++++
+ fonts/ascii12.tlf    |  Bin 0 -> 57675 bytes
+ fonts/ascii9.tlf     |  Bin 0 -> 43154 bytes
+ fonts/bigascii12.tlf |  Bin 0 -> 85164 bytes
+ fonts/bigascii9.tlf  |  Bin 0 -> 63228 bytes
+ fonts/bigmono12.tlf  |  Bin 96310 -> 96319 bytes
+ fonts/bigmono9.tlf   |  Bin 71379 -> 71389 bytes
+ fonts/letter.tlf     |    8 +++-
+ fonts/mono12.tlf     |  Bin 64756 -> 64764 bytes
+ fonts/mono9.tlf      |  Bin 47390 -> 47399 bytes
+ fonts/smascii12.tlf  |  Bin 0 -> 50934 bytes
+ fonts/smascii9.tlf   |  Bin 0 -> 39922 bytes
+ fonts/smmono12.tlf   |  Bin 57408 -> 57416 bytes
+ fonts/smmono9.tlf    |  Bin 43288 -> 43296 bytes
+ tools/caca2tlf.c     |   89 ++++++++++++++++++++++++++++++++++++--------------
+ fonts/bigmono12.tlf |  Bin 86088 -> 96310 bytes
+ fonts/bigmono9.tlf  |  Bin 63466 -> 71379 bytes
+ fonts/circle.tlf    |    4 ++--
+ fonts/emboss.tlf    |    4 ++--
+ fonts/emboss2.tlf   |    4 ++--
+ fonts/future.tlf    |    6 +++---
+ fonts/mono12.tlf    |  Bin 55455 -> 64756 bytes
+ fonts/mono9.tlf     |  Bin 40250 -> 47390 bytes
+ fonts/smblock.tlf   |    4 ++--
+ fonts/smbraille.tlf |    6 +++---
+ fonts/smmono12.tlf  |  Bin 48946 -> 57408 bytes
+ fonts/smmono9.tlf   |  Bin 36832 -> 43288 bytes
+ fonts/wideterm.tlf  |    4 ++--
+ tools/caca2tlf.c    |    2 +-
+ tools/caca2tlf.c |    2 +-
+    Added "letter.tlf", a font designed by Francesco Poli.
+ fonts/letter.tlf  |  836 +++++++++++++++++++++++++++++++++++++++++++++++++++++
+ tools/caca2tlf.c  |   64 ++++++++++++++++++++++++++--------------------------
+ tools/caca2tlf.c |    2 +-
+ fonts/wideterm.tlf |  132 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+ fonts/bigmono12.tlf |  Bin 75353 -> 86088 bytes
+ fonts/bigmono9.tlf  |  Bin 56049 -> 63466 bytes
+ fonts/circle.tlf    |    2 +-
+ fonts/emboss.tlf    |    2 +-
+ fonts/emboss2.tlf   |    2 +-
+ fonts/future.tlf    |    2 +-
+ fonts/mono12.tlf    |  Bin 49122 -> 55455 bytes
+ fonts/mono9.tlf     |  Bin 35751 -> 40250 bytes
+ fonts/smblock.tlf   |    6 +++---
+ fonts/smbraille.tlf |    2 +-
+ fonts/smmono12.tlf  |  Bin 43402 -> 48946 bytes
+ fonts/smmono9.tlf   |  Bin 32653 -> 36832 bytes
+ fonts/smblock.tlf |    5 +++++
+ fonts/circle.tlf    |    2 +-
+ fonts/emboss.tlf    |    2 +-
+ fonts/emboss2.tlf   |    2 +-
+ fonts/future.tlf    |    2 +-
+ fonts/smblock.tlf   |    2 +-
+ fonts/smbraille.tlf |    2 +-
+ tools/caca2tlf.c    |    2 +-
+ fonts/circle.tlf    |    3 ++-
+ fonts/emboss.tlf    |    3 ++-
+ fonts/emboss2.tlf   |    3 ++-
+ fonts/future.tlf    |    3 ++-
+ fonts/smblock.tlf   |    3 ++-
+ fonts/smbraille.tlf |    3 ++-
+ tools/caca2tlf.c    |    7 ++++---
+ fonts/circle.tlf |   70 +++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ fonts/emboss.tlf    |    2 +-
+ fonts/emboss2.tlf   |    2 +-
+ fonts/future.tlf    |    2 +-
+ fonts/smblock.tlf   |    2 +-
+ fonts/smbraille.tlf |    2 +-
+ fonts/bigmono12.tlf |  Bin 75318 -> 75353 bytes
+ fonts/bigmono9.tlf  |  Bin 56026 -> 56049 bytes
+ fonts/mono12.tlf    |  Bin 49089 -> 49122 bytes
+ fonts/mono9.tlf     |  Bin 35733 -> 35751 bytes
+ fonts/smblock.tlf   |  106 +++++++++++++++++++++++++-------------------------
+ fonts/smmono12.tlf  |  Bin 43378 -> 43402 bytes
+ fonts/smmono9.tlf   |  Bin 32628 -> 32653 bytes
+ tools/caca2tlf.c    |    8 +++-
+      * Fix max width in smblock.tlf.
+ fonts/smblock.tlf |    4 ++--
+ tools/caca2tlf.c |   29 +++++++++++++++--------------
+      * Double width support in caca2tlf.
+ fonts/bigmono12.tlf |  Bin 63251 -> 75318 bytes
+ fonts/bigmono9.tlf  |  Bin 46988 -> 56026 bytes
+ fonts/mono12.tlf    |  Bin 41823 -> 49089 bytes
+ fonts/mono9.tlf     |  Bin 30477 -> 35733 bytes
+ fonts/smmono12.tlf  |  Bin 36946 -> 43378 bytes
+ fonts/smmono9.tlf   |  Bin 27838 -> 32628 bytes
+ tools/caca2tlf.c    |   44 ++++++++++++++++++++++++++------------------
+ fonts/bigmono12.tlf |  Bin 0 -> 63251 bytes
+ fonts/bigmono9.tlf  |  Bin 0 -> 46988 bytes
+ fonts/mono12.tlf    |  Bin 63363 -> 41823 bytes
+ fonts/mono9.tlf     |  Bin 47020 -> 30477 bytes
+ fonts/smmono12.tlf  |  Bin 0 -> 36946 bytes
+ fonts/smmono9.tlf   |  Bin 0 -> 27838 bytes
+      * Add --half and --quarter options to caca2tlf.
+ tools/caca2tlf.c |  144 ++++++++++++++++++++++++++++++++++++++++++-----------
+      * Got rid of the mono9.c renderer. We now have a .tlf font instead.
+      * Added two new fonts created with caca2tlf:
+          caca2tlf "Monospace 9" | zip >| fonts/mono9.tlf
+          caca2tlf "Monospace Bold 12" | zip >| fonts/mono12.tlf
+ fonts/mono12.tlf  |  Bin 0 -> 63363 bytes
+ fonts/mono9.tlf   |  Bin 0 -> 47020 bytes
+      * Added the caca2tlf tool, which converts a libcaca font into a TOIlet font
+ tools/caca2tlf.c  |  152 +++++++++++++++++++++++++++++++++++++++++++++++++++++
+ fonts/smblock.tlf |  666 ++++++++++++++++++++++++++--------------------------
+ fonts/smblock.tlf |   90 ++++++++++++++++++++++++++++++++++++++++++++++++++---
+ fonts/smblock.tlf |  265 ++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ fonts/smblock.tlf |  853 +++++++++++++++++++++++++++++++++++++++++++++++++++++
+ fonts/future.tlf |    4 ++--
+ fonts/future.tlf |  147 +++++++++++++++++++++++++++++++++++++++++++++++++-----
+ fonts/future.tlf |   86 +++++++++++++++++++++++++++++-------------------------
+ fonts/future.tlf  |  329 +++++++++++++++++++++++++++++++++++++++++++++++++++++
+ fonts/circle.tlf  |  117 +++++++++++++++++++++++++++++++++++++++++++++++++++++
+      * There is no way emboss.tlf can have proper lowercase characters. Filled
+ fonts/emboss.tlf  |  184 ++++++++++++++++++++++++++--------------------------
+ fonts/emboss2.tlf |  184 ++++++++++++++++++++++++++--------------------------
+ fonts/emboss.tlf    |   27 +++++++++++++++------------
+ fonts/emboss2.tlf   |   27 +++++++++++++++------------
+ fonts/smbraille.tlf |    5 ++++-
+ fonts/smbraille.tlf |  216 +++++++++++++++++++++++++++++++++++++++++++++++++++
+      * Created emboss2.tlf with a simple sed rule.
+ fonts/emboss.tlf  |    5 +-
+ fonts/emboss2.tlf |  321 +++++++++++++++++++++++++++++++++++++++++++++++++++++
+      * Created emboss.tlf, a Unicode font for the official TOIlet distribution.
+ fonts/emboss.tlf  |  318 +++++++++++++++++++++++++++++++++++++++++++++++++++++

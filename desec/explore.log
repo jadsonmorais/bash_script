@@ -1,0 +1,26 @@
+[2024-02-24 16:59:03] Iniciando script...
+[2024-02-24 17:00:09] Iniciando script...
+[2024-02-24 17:01:34] Iniciando script...
+[2024-02-24 17:01:58] Erro: Arquivo de wordlist não encontrado.
+[2024-02-24 17:02:10] Iniciando script...
+[2024-02-24 17:02:14] Erro: Arquivo de wordlist não encontrado.
+[2024-02-24 17:02:41] Erro: Arquivo de wordlist não encontrado.
+[2024-02-24 17:02:45] Iniciando script...
+[2024-02-24 17:07:02] Iniciando script...
+[2024-02-24 17:54:03] Iniciando script...
+[2024-02-24 17:54:03] URL: businesscorp.com.br/admin - Status Code: 301
+[2024-02-24 17:54:03] URL: businesscorp.com.br/login - Status Code: 404
+[2024-02-24 17:54:04] URL: businesscorp.com.br/usuario - Status Code: 404
+[2024-02-24 17:54:04] URL: businesscorp.com.br/senha - Status Code: 200
+[2024-02-24 17:54:05] URL: businesscorp.com.br/dashboard - Status Code: 404
+[2024-02-24 17:54:05] URL: businesscorp.com.br/config - Status Code: 200
+[2024-02-24 17:54:05] URL: businesscorp.com.br/configuracoes - Status Code: 301
+[2024-02-24 17:54:06] URL: businesscorp.com.br/dados - Status Code: 404
+[2024-02-24 17:54:06] URL: businesscorp.com.br/api - Status Code: 404
+[2024-02-24 17:54:06] URL: businesscorp.com.br/rest - Status Code: 404
+[2024-02-24 17:54:07] URL: businesscorp.com.br/backup - Status Code: 404
+[2024-02-24 17:54:07] URL: businesscorp.com.br/temp - Status Code: 404
+[2024-02-24 17:54:08] URL: businesscorp.com.br/cache - Status Code: 404
+[2024-02-24 17:54:08] URL: businesscorp.com.br/tmp - Status Code: 404
+[2024-02-24 17:54:08] URL: businesscorp.com.br/uploads - Status Code: 404
+[2024-02-24 17:54:09] URL: businesscorp.com.br/download - Status Code: 404
