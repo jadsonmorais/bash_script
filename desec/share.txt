@@ -1,0 +1,22 @@
+# Nmap 7.94SVN scan initiated Wed Mar  6 19:16:49 2024 as: nmap -sS -p 139,445 --open -Pn -iL hosts -oG share.txt
+Host: 172.16.1.4 ()	Status: Up
+Host: 172.16.1.4 ()	Ports: 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///
+Host: 172.16.1.60 ()	Status: Up
+Host: 172.16.1.60 ()	Ports: 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///
+Host: 172.16.1.107 ()	Status: Up
+Host: 172.16.1.107 ()	Ports: 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///
+Host: 172.16.1.108 ()	Status: Up
+Host: 172.16.1.108 ()	Ports: 139/open/tcp//netbios-ssn///	Ignored State: closed (1)
+Host: 172.16.1.165 ()	Status: Up
+Host: 172.16.1.165 ()	Ports: 139/open/tcp//netbios-ssn///	Ignored State: closed (1)
+Host: 172.16.1.233 ()	Status: Up
+Host: 172.16.1.233 ()	Ports: 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///
+Host: 172.16.1.243 ()	Status: Up
+Host: 172.16.1.243 ()	Ports: 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///
+Host: 172.16.1.245 ()	Status: Up
+Host: 172.16.1.245 ()	Ports: 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///
+Host: 172.16.1.249 ()	Status: Up
+Host: 172.16.1.249 ()	Ports: 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///
+Host: 172.16.1.253 ()	Status: Up
+Host: 172.16.1.253 ()	Ports: 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///
+# Nmap done at Wed Mar  6 19:17:08 2024 -- 28 IP addresses (28 hosts up) scanned in 18.37 seconds

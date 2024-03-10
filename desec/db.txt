@@ -1,0 +1,8 @@
+# Nmap 7.94SVN scan initiated Wed Mar  6 19:19:53 2024 as: nmap -sS -p 3306,1433 --open -Pn -iL hosts -oG db.txt
+Host: 172.16.1.33 ()	Status: Up
+Host: 172.16.1.33 ()	Ports: 3306/open/tcp//mysql///	Ignored State: closed (1)
+Host: 172.16.1.157 ()	Status: Up
+Host: 172.16.1.157 ()	Ports: 3306/open/tcp//mysql///	Ignored State: closed (1)
+Host: 172.16.1.249 ()	Status: Up
+Host: 172.16.1.249 ()	Ports: 1433/open/tcp//ms-sql-s///	Ignored State: closed (1)
+# Nmap done at Wed Mar  6 19:20:12 2024 -- 28 IP addresses (28 hosts up) scanned in 18.36 seconds
